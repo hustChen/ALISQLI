@@ -1,7 +1,10 @@
+com/chensq/sqli/Main.class
+com/chensq/sqli/preprocessing/PreprocessingMapper.class
+com/chensq/sqli/preprocessing/PreprocessingReducer.class
+com/chensq/sqli/test/SqlTestReducer.class
 com/chensq/sqli/SqlSplit/SqlSplitReducer.class
 com/chensq/sqli/preprocessing/PreprocessingLauncher.class
 com/chensq/sqli/SqlSplit/SqlSplitMapper.class
-com/chensq/sqli/Main.class
 com/chensq/sqli/SqlSplit/SqlSplitLauncher.class
-com/chensq/sqli/preprocessing/PreprocessingMapper.class
-com/chensq/sqli/preprocessing/PreprocessingReducer.class
+com/chensq/sqli/test/SqlTestMapper.class
+com/chensq/sqli/test/SqlTestLauncher.class

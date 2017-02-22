@@ -11,13 +11,63 @@ create table sql_train_black as select * from sql_train_id where label=1 order b
 create table words
 (
 	word string,
-	black bigint,
 	white bigint,
-	total bigint,
+	black bigint,
+	total bigint
 )
+
+create table words_with_id
+(
+	word string,
+	white bigint,
+	black bigint,
+	total bigint,
+	idcount bigint
+)
+
+create table test_words
+(
+	id string,
+	word string,
+	appearence bigint
+)
+
+create table test_samples
+(
+      	sql_id bigint comment '指令id',
+	id string,
+	value string,
+	label string
+)
+
 
 create table train_samples as select * from 
 (select * from sql_train_black 
 union all
 select * from sql_train_white
 ) tmp;
+
+select sum(white),sum(black), sum(total) from words ;
+1
+white 197954
+black 78558
+total 276512
+
+	
+white 104850
+black 10537
+total 115387
+
+select max(sql_id) from train_samples where label=1;
+21485
+
+select max(sql_id) from train_samples where label=0;
+21835
+
+create table test_samples as select * from 
+(select * from sql_train_id where label=1 and sql_id>21485 
+union all
+select * from sql_train_id where label=1 and sql_id>21835
+) tmp;
+
+create table test as select test_words.id,test_words.word,test_words.appearence,words.black,words.white from test_words left outer join words  on test_words.id=words.word; 

@@ -1,7 +1,10 @@
-/home/chensq/projects/ALISQLI/src/main/java/com/chensq/sqli/SqlSplit/SqlSplitLauncher.java
-/home/chensq/projects/ALISQLI/src/main/java/com/chensq/sqli/SqlSplit/SqlSplitMapper.java
-/home/chensq/projects/ALISQLI/src/main/java/com/chensq/sqli/Main.java
-/home/chensq/projects/ALISQLI/src/main/java/com/chensq/sqli/preprocessing/PreprocessingMapper.java
-/home/chensq/projects/ALISQLI/src/main/java/com/chensq/sqli/preprocessing/PreprocessingReducer.java
-/home/chensq/projects/ALISQLI/src/main/java/com/chensq/sqli/SqlSplit/SqlSplitReducer.java
-/home/chensq/projects/ALISQLI/src/main/java/com/chensq/sqli/preprocessing/PreprocessingLauncher.java
+/home/chensq/IdeaProjects/SQLI/ALISQLI/src/main/java/com/chensq/sqli/Main.java
+/home/chensq/IdeaProjects/SQLI/ALISQLI/src/main/java/com/chensq/sqli/preprocessing/PreprocessingMapper.java
+/home/chensq/IdeaProjects/SQLI/ALISQLI/src/main/java/com/chensq/sqli/test/SqlTestReducer.java
+/home/chensq/IdeaProjects/SQLI/ALISQLI/src/main/java/com/chensq/sqli/test/SqlTestMapper.java
+/home/chensq/IdeaProjects/SQLI/ALISQLI/src/main/java/com/chensq/sqli/SqlSplit/SqlSplitReducer.java
+/home/chensq/IdeaProjects/SQLI/ALISQLI/src/main/java/com/chensq/sqli/preprocessing/PreprocessingLauncher.java
+/home/chensq/IdeaProjects/SQLI/ALISQLI/src/main/java/com/chensq/sqli/preprocessing/PreprocessingReducer.java
+/home/chensq/IdeaProjects/SQLI/ALISQLI/src/main/java/com/chensq/sqli/test/SqlTestLauncher.java
+/home/chensq/IdeaProjects/SQLI/ALISQLI/src/main/java/com/chensq/sqli/SqlSplit/SqlSplitLauncher.java
+/home/chensq/IdeaProjects/SQLI/ALISQLI/src/main/java/com/chensq/sqli/SqlSplit/SqlSplitMapper.java

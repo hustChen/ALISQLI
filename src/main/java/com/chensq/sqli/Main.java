@@ -7,27 +7,27 @@ import java.net.URLDecoder;
  * Created by chensq on 17-2-21.
  */
 public class Main {
-    public static void main(String[] args) throws Exception {
-        String str="http://www.some_domain.com/some_path?keyone=2251291083&keytwo=-76%27+union+select+1%2C2%2Cconcat_ws%280x3a%2Cuser%28%29%2Cdatabase%28%29%2Cversion%28%29%29%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13+%2F*&keythree=7931414735";
-        //str=urlDecode(str);
-        String t=URLDecoder.decode(str,"UTF-8");
-        System.out.println(t);
-        if(t.contains("%"));
-            t= URLDecoder.decode(t,"UTF-8");
-        System.out.println(t);
-
-        if(t.contains("%"))
-            t=URLDecoder.decode(str,"gb2312");
-        if(t.contains("%"))
-            t=URLDecoder.decode(str,"gb2312");
-
-        str=t;
-        str=str.substring(str.indexOf('?')+1);
-        String[] words=str.split("\\[|!|\\$|\"|#|%|&|'|\\]|\\+|:|\\(|\\)|-|\\.|\\*|\\/| |>|<|=|\\?|@|\\||\\^|~|\\{|\\}|,");
-        for(String s:words){
-            System.out.println(s);
-        }
-    }
+//    public static void main(String[] args) throws Exception {
+//        String str="http://www.some_domain.com/some_path?keyone=a21bo.50862.201879-item-1002.4.nxuwNE&keytwo=1234.5%2522%2529%2529%2520AND%25209788%253D%2528SELECT%2520COUNT%2528%252A%2529%2520FROM%2520ALL_USERS%2520T1%252CALL_USERS%2520T2%252CALL_USERS%2520T3%252CALL_USERS%2520T4%252CALL_USERS%2520T5%2529--%2520AND%2520%2528%2528%2522QRas%2522%2520LIKE%2520%2522QRas&keythree=1477350526202_196&keyfour=7974750069";
+//        //str=urlDecode(str);
+//        String t=URLDecoder.decode(str,"UTF-8");
+//        System.out.println(t);
+//        if(t.contains("%"));
+//            t= URLDecoder.decode(t,"UTF-8");
+//        System.out.println(t);
+//
+//        if(t.contains("%"))
+//            t=URLDecoder.decode(str,"gb2312");
+//        if(t.contains("%"))
+//            t=URLDecoder.decode(str,"gb2312");
+//
+//        str=t;
+//        str=str.substring(str.indexOf('?')+1);
+//        String[] words=str.split("\\[|!|\\$|\"|#|%|&|'|\\]|\\+|:|\\(|\\)|-|\\.|\\*|\\/| |>|<|=|\\?|@|\\||\\^|~|\\{|\\}|,");
+//        for(String s:words){
+//            System.out.println(s);
+//        }
+//    }
 
     private static String urlDecode(String code) throws Exception{
 
