@@ -1,0 +1,23 @@
+create table sql_train_id
+(
+sql_id bigint comment '指令id',
+id string,
+value string,
+label string
+);
+
+create table sql_train_black as select * from sql_train_id where label=1 order by sql_id limit 1800;
+
+create table words
+(
+	word string,
+	black bigint,
+	white bigint,
+	total bigint,
+)
+
+create table train_samples as select * from 
+(select * from sql_train_black 
+union all
+select * from sql_train_white
+) tmp;
