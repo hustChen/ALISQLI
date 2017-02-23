@@ -71,3 +71,16 @@ select * from sql_train_id where label=1 and sql_id>21835
 ) tmp;
 
 create table test as select test_words.id,test_words.word,test_words.appearence,words.black,words.white from test_words left outer join words  on test_words.id=words.word; 
+
+create table test_result
+(
+	id string,
+	black double,
+	white double,
+	result string
+)
+
+select count(*) from test_result  where result='1';
+
+select sql_train_id.id,sql_train_id.value,sql_train_id.label,test_result.result from sql_train_id left join test_result  on sql_train_id.id=test_result.id;  
+

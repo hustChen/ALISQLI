@@ -14,15 +14,15 @@ import com.chensq.sqli.SqlSplit.SqlSplitReducer;
  * Created by chensq on 17-2-22.
  */
 public class SqlTestLauncher {
-    public static void main(String[] args) throws OdpsException {
-        JobConf job=new JobConf();
-        job.setMapperClass(SqlSplitMapper.class);
-        job.setReducerClass(SqlSplitReducer.class);
-
-        InputUtils.addTable(TableInfo.builder().tableName("test_samples").build(),job);
-        OutputUtils.addTable(TableInfo.builder().tableName("test_words").build(),job);
-
-        RunningJob rj= JobClient.runJob(job);
-        rj.waitForCompletion();
-    }
+    //public static void main(String[] args) throws OdpsException {
+    //    JobConf job=new JobConf();
+    //    job.setMapperClass(SqlSplitMapper.class);
+    //    job.setReducerClass(SqlSplitReducer.class);
+    //
+    //    InputUtils.addTable(TableInfo.builder().tableName("test_samples").build(),job);
+    //    OutputUtils.addTable(TableInfo.builder().tableName("test_words").build(),job);
+    //
+    //    RunningJob rj= JobClient.runJob(job);
+    //    rj.waitForCompletion();
+    //}
 }
